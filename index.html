@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sip&Sync Cocktails</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <div class="logo">
+            <img src="images/ss.jpeg" alt="Sip&Sync Logo">
+        </div>
+        <h1 class="site-title">Sip&Sync Cocktails</h1>
+        <nav>
+            
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+
+     <!-- HERO SECTION -->
+     <section id="hero">
+        <div class="hero-content">
+            <h1>Had enough of the same old drink menus and predictable choices?</h1>
+            <p>Find your ideal drink in seconds.</p>
+            <div class="buttons">
+                <button id="quiz-btn">My Pick</button>
+                <button id="random-btn">Surprise Me!</button>
+            </div>
+        </div>
+    </section>
+
+
+
+ 
+ <!-- CONTAINER-FIND SECTION -->
+    <div class="cocktail-container">
+        <h3>Let's find Your Perfect Cocktail Buddy🍸</h3>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a cocktail...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="cocktail-grid" id="cocktailGrid">
+            <!-- Cocktail cards will be injected here -->
+        </div>
+    </div>
+
+
+
+
+
+     <!-- Preferences Selection -->
+     <section id="preference-section">
+        <h2>🍹Match your Vibe🍹</h2>
+
+        <div class="preferences">
+            <label>
+                Taste:
+                <select id="taste">
+                    <option value="sweet">Sweet</option>
+                    <option value="sour">Sour</option>
+                </select>
+            </label>
+
+            <label>
+                Ice:
+                <select id="ice">
+                    <option value="with ice">With Ice</option>
+                    <option value="no ice">No Ice</option>
+                </select>
+            </label>
+
+            <label>
+                Alcohol:
+                <select id="alcoholic">
+                    <option value="Alcoholic">Alcoholic</option>
+                    <option value="Non alcoholic">Non-Alcoholic</option>
+                </select>
+            </label>
+
+            <label>
+                Type of Alcohol:
+                <select id="alcohol-type">
+                    <option value="vodka">Vodka</option>
+                    <option value="gin">Gin</option>
+                    <option value="whiskey">Whiskey</option>
+                    <option value="rum">Rum</option>
+                    <option value="tequila">Tequila</option>
+                </select>
+            </label>
+
+            <label>
+                Garnish:
+                <select id="garnish">
+                    <option value="lime">Lime</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="orange">Orange</option>
+                    <option value="mint">Mint</option>
+                </select>
+            </label>
+        </div>
+
+        <button id="find-btn">Get your Cocktail</button>
+
+    </section>
+
+    <!-- Cocktail Display -->
+    <div id="cocktail-container"></div>
+
+
+
+
+
+
+    <!-- About us section -->
+
+    <h4> About Sip & Sync</h4>
+
+    <section class="section fade-in">
+        <h2>The Future of <span class="highlight">Cocktail Experiences</span></h2>
+        <p>
+            Sip & Sync is a revolutionary cocktail experience, blending the art of mixology with the power of technology. Designed for the most prestigious clubs and high-end restaurants, our platform personalizes every drink to match the unique tastes of your guests. Whether it’s a handcrafted classic or a bold new creation, we bring innovation, precision, 
+            and luxury to every pour—elevating your 
+            establishment’s cocktail game to the next level.  
+        </p>
+    </section>
+
+    <section class="about-container">
+        <div class="about-box fade-in">
+            <img src="images/cock1.jpeg" alt="Custom Cocktails">
+            <h3>Signature Cocktails</h3>
+            <p>We curate exclusive, tailor-made cocktail recipes that perfectly align with your taste preferences.</p>
+        </div>
+
+        <div class="about-box fade-in">
+            <img src="images/cock3.jpeg" alt="Nightlife Experience">
+            <h3>Nightlife Evolution</h3>
+            <p> Our cutting-edge platform ensures that every cocktail is not just a drink, but a masterpiece—crafted with precision, innovation, and a touch of luxury.</p>
+        </div>
+
+        <div class="about-box fade-in">
+            <img src="images/cock5.jpeg" alt="Tech-Driven Mixology">
+            <h3>Smart Technology</h3>
+            <p>Experience real-time cocktail customization powered by AI, where every drink is uniquely crafted and perfectly balanced to match your taste. .</p>
+        </div>
+    </section>
+
+    <section class="split-section fade-in">
+        <img src="images/bartender.jpeg" alt="Luxury Cocktails">
+        <div class="split-text">
+            <h2>Redefining <span class="highlight">Luxury Cocktails</span></h2>
+            <p>
+                Say goodbye to ordinary drink menus! Sip & Sync 
+                revolutionizes the cocktail scene with interactive 
+                experiences, featuring custom-crafted drinks, bold flavor experiments, 
+                and AI-driven insights that keep your menu ahead of the curve.
+                Whether you're a high-end bar or an exclusive lounge, 
+                we turn every sip into an unforgettable journey.
+            </p>
+            <button class="cta">Partner with Us</button>
+        </div>
+    </section>
+
+   <!-- FOOTER SECTION -->
+<footer>
+    <div class="footer-content fade-in">
+        <h2>Sip & Sync</h2>
+        <div class="separator"></div>
+        <p>The Art of Mixology, Elevated with Technology.</p>
+
+        <div class="footer-bottom fade-in">
+            <p>&copy; 2025 Sip & Sync. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
